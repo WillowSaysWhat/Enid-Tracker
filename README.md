@@ -34,9 +34,12 @@ _Enid Tracker is currently under construction and will be revealed in it's first
 ## Understanding the User Interface
 The image above is the current famework for the home screen in its the current stage of production. It can be broken down into 2 sections. the circlular icon bar will hold filtering option in the first iteration, but can be changed to hold settings icons and/or other user options. The larger cards display the users medicine information and will have an onPressed action that will allow the user to make changes to the medicine information.
 ## Important Widgets
+There is a few simple widgets that have been constructed suing the available widgets in Flutter. This encompasses the Medicine panel which is the rounded-rectangle found on the Home Screen. It visualises the different medication within the user's regime. The image selection list on the 'Add a New Medicine' page is another prominent widget and was created using a horizontal scrolling ListView builder and an asset folder full of images. The app uses the Provider state management concept to manage the change in image state. 
 ### Medicine Panel
-
+The Medicine Panel is built using the Medicine object and ListView.Builder. Multiple Medicine objects are held in a List<Medicine>. The builder uses this List to build a scrollable vertical ListView filled with a panel that holds the medicine's name, the strength in milligrams, the amount left in the user's pack, and the pill/tablet icon.
+This can be manipulated to reveal an edit and a delete button.
 ### Add a New Medicine
+Add a new medicine is currently a floating action button that takes the user to the corresponding page. 
 ## Software Documentation
 ### Software Stack
 ### Widget Design
